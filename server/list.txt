@@ -1,0 +1,114 @@
+ *************************************express*******************************************
+
+// get --> used to get data from server kuch server se lena hai  
+// post --> used to send data to server kuch server ko dena hai / creation of data
+// put --> used to update data on server kuch server pe update karna hai sara data update karna hai jo sahi hota hai wo bhi update hota hai
+// patch --> used to update part of data on server kuch server pe part update karna hai jo part update karna hai wo hi update hota hai jo part update nahi karna hai wo nahi hota hai means jo galat ho wahi update hota hai
+// delete --> used to delete data from server kuch server se delete karna hai  
+
+
+// http module is used to create server and handle request and response but express is a 
+// framework which is built on top of http module and it provides many features like routing, 
+// middleware, etc. which makes it easy to handle request and response.
+
+
+//http stuts codes
+// 200 --> OK
+// 201 --> Created
+// 204 --> No Content
+// 400 --> Bad Request
+// 401 --> Unauthorized
+// 403 --> Forbidden
+// 404 --> Not Found
+// 500 --> Internal Server Error
+// 503 --> Service Unavailable
+
+
+// Property	Description	Example
+// req.url	The URL of the request	/about
+// req.method	HTTP method used	GET, POST
+// req.query	URL query parameters	/search?q=apple → { q: 'apple' }
+// req.params	Route parameters	/user/:id → /user/5 → { id: 5 }
+// req.body	Data sent in the body (POST/PUT)	{ name: "John" }
+// req.headers	Request headers info	{ "user-agent": "...", "content-type": "..." }
+
+//npm i express --save
+
+//******************************middleware in express.js**********************************
+
+
+//jab bhi app   browser se koi request backend bhej te hai wo apne route par jatti hai and agar
+//  app chahte hai route pe jane se pehale wo request mein app kuch cheak karna chahte ho ya 
+// fir app kuch jodana chahte ho un sare case mein middleware use hota hai
+
+//app.use() --> is used to use middleware in express.js
+
+
+
+// npm i nodemon --save-dev  --> its command use to restart server autometically 
+
+
+//cookie hota hai browser me data save karta hai and session hota hai server me data save 
+// karta hai
+
+//   Web Browser (Client)
+
+// Role: The user's interface to the internet; requests and displays web pages.
+// Function: Interprets code (HTML, CSS, JS) and renders it visually.
+// Examples: Google Chrome, Mozilla Firefox, Safari, Microsoft Edge.
+// Location: Runs on the user's device (computer, phone). 
+
+
+//    Web Server (Provider)
+
+//  Role: Stores website files and responds to browser requests.
+//  Function: Listens for requests, processes them, and sends back the requested data.
+//  Examples: Apache HTTP Server, Nginx, Microsoft IIS.
+//  Location: Runs on powerful, dedicated server machines or cloud infrastructure. 
+
+
+//   Key Interaction 
+// 1.You type a URL (e.g., www.example.com) into your browser (client).
+// 2.The browser sends an HTTP request to the server hosting www.example.com.
+// 3.The server finds the files (HTML, CSS, images) and sends them back.
+// 4.The browser receives the files and renders them as the webpage you see. 
+
+////////////OR.////
+
+//   Interaction (Client-Server Model)
+// 1.You type a URL (e.g., www.example.com) into your browser.
+// 2.The browser sends an HTTP request to the server hosting that site.
+// 3.The server finds the requested files (HTML, images) and sends them back to the browser.
+// 4.The browser receives the data and renders the interactive webpage for you to see. 
+
+// | ફીચર (લક્ષણ)                         | સેશનનો ફાયદો                                                                                       |
+// | ------------------------------------ | -------------------------------------------------------------------------------------------------- |
+// | 🔐 **સિક્યોર (Secure)**              | ડેટા સર્વર પર સ્ટોર થાય છે, ક્લાયન્ટ પર નહી — એટલેથી વધુ સુરક્ષિત.                                 |
+// | ⏳ **ટેમ્પરરી (Temporary)**           | સેશન ઑટોમેટિક એક્સપાયર થાય છે — એટલે જો યુઝર લાંબા ટાઈમ સુધી એક્ટિવ ન હોય તો લૉગઆઉટ થઈ જાય.        |
+// | 🙋‍♂️ **પર્સનલાઈઝ્ડ (Personalized)** | દરેક યુઝર માટે અલગ-अलग ડેટા સ્ટોર થાય છે (જેવાં કે લોગિન ઈનફો, ભાષા પસંદગી, વપરાશકર્તા નામ વગેરે). |
+
+
+// npm i express-session --save
+
+
+
+// // *************connect flesh middleware flesh message in express js******************* 
+
+//kisi b route pe data set kar sakte hai save kar sakte hai or wo dusre router par use kar sakte hai 
+
+
+
+// 🔹 What is connect-flash?
+// connect-flash is a middleware used to store temporary messages (called flash messages) in the session that are available only for one request-response cycle.
+
+// ✅ Use cases of flash messages:
+// Situation	Flash Message Example
+// After login success	"Welcome back!"
+// On login failure	"Invalid email or password."
+// After form submission	"Your message has been sent!"
+// Unauthorized access	"Please login first."
+
+// 🧠 Why it's useful?
+// Flash messages disappear after being shown once.
+
+// Ideal for showing success/error/info messages after redirects
