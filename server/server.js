@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
@@ -11,7 +12,6 @@ const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
 const app = express();
 app.use(cors()); // This allows your React app to talk to the server
 app.use(express.json());
-const PORT = process.env.PORT || 5000;
 
 // 1. Connect to Local MongoDB
 mongoose
@@ -163,10 +163,23 @@ app.delete("/api/category/:id", async (req, res) => {
 });
 
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
-app.get("/", (req, res) => {
-  res.send("Server is live!");
+
+// 1. Tell Express to serve files from the "public" folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// 2. Point the main URL (/) to your index.html file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
 });
+// app.get("/", (req, res) => {
+//   res.send("Server is live!");
+// });
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
