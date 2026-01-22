@@ -29,15 +29,6 @@ const upload = multer({ storage });
 // Create the 'uploads' folder statically so you can see the images in browser
 app.use("/uploads", express.static("uploads"));
 
-// 1. Serve static files from the React/Vite app
-// Note: If you use Vite, change 'build' to 'dist'
-app.use(express.static(path.join(__dirname, "../client/dist")));
-
-// 2. Handle any requests that don't match the ones above
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
-});
-
 // //3. your post route for customer table
 app.post("/api/customers", async (req, res) => {
   try {
