@@ -164,14 +164,13 @@ app.delete("/api/category/:id", async (req, res) => {
 
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
 
-// 1. Tell Express to serve files from the "public" folder
-app.use(express.static(path.join(__dirname, 'dist')));
+// 1. Serve static files (CSS, JS, Images) from the root folder
+app.use(express.static(path.join(__dirname, './')));
 
-// 2. Point the main URL (/) to your index.html file
+// 2. Point the main URL to your index.html in the root
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
