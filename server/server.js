@@ -9,7 +9,7 @@ const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
 const app = express();
 app.use(cors()); // This allows your React app to talk to the server
 app.use(express.json());
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 // 1. Connect to Local MongoDB
 mongoose
