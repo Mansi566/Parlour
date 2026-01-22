@@ -170,11 +170,7 @@ app.delete("/api/category/:id", async (req, res) => {
 });
 
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
-app.get("/", (req, res) => {
-  res.send(
-    "<h1>Welcome to my Website!</h1><p>The server is running perfectly.</p>",
-  );
-});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
