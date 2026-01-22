@@ -165,7 +165,7 @@ app.delete("/api/category/:id", async (req, res) => {
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
 
 // 1. Tell Express to serve files from the "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // 2. Point the main URL (/) to your index.html file
 app.get('/', (req, res) => {
