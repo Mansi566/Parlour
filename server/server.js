@@ -165,6 +165,7 @@ app.delete("/api/category/:id", async (req, res) => {
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
 app.get("/", (req, res) => {
   res.send("Server is live!");
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.listen(PORT, () => {
