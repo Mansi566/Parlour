@@ -1,15 +1,20 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
 const Category = require("./model/Category");
 const Customer = require("./model/customer");
 const Post = require("./model/post");
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
 
 const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
 app.use(cors()); // This allows your React app to talk to the server
 app.use(express.json());
 
@@ -163,13 +168,32 @@ app.delete("/api/category/:id", async (req, res) => {
 });
 
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
-app.get("/", (req, res) => {
-  res.send("Server is live!");
-  res.sendFile(path.join(__dirname, "..", "index.html"));
-  return res.send("OK");
+// app.get("/", (req, res) => {
+//   res.send("Server is live!");
+//   res.sendFile(path.join(__dirname, "..", "index.html"));
 
+// });
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+// serve frontend
+app.use(express.static(path.join(__dirname, "client/dist")));
+
+// API example
+app.get("/api/test", (req, res) => {
+  return res.json({ message: "API working" });
 });
 
+// ⚠️ ALWAYS LAST (SPA fallback)
+app.get("*", (req, res) => {
+  return res.sendFile(
+    path.join(__dirname, "client/dist/index.html")
+  );
+});
+
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log("Server running on port", PORT);
 });
