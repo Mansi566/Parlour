@@ -1,0 +1,6 @@
+# Ignore all large images generally
+*.png
+*.jpg
+*.jpeg
+*.svg
+
