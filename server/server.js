@@ -1,5 +1,3 @@
-import { fileURLToPath } from "url";
-
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -10,9 +8,6 @@ const Customer = require("./model/customer");
 const Post = require("./model/post");
 const PORT = process.env.PORT || 5000;
 const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(cors()); // This allows your React app to talk to the server
@@ -168,22 +163,8 @@ app.delete("/api/category/:id", async (req, res) => {
 });
 
 // app.listen(5000, () => console.log("Server running on http://localhost:5000"));
-// app.get("/", (req, res) => {
-//   // res.send("Server is live!");
-// });
-
-
-// Serve frontend build
-app.use(express.static(path.join(__dirname, "client/dist")));
-
-// API test route
-app.get("/api", (req, res) => {
-  res.json({ message: "API is working" });
-});
-
-// Frontend fallback (SPA)
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/dist/index.html"));
+app.get("/", (req, res) => {
+  res.send("Server is live!");
 });
 
 app.listen(PORT, () => {

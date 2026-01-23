@@ -1,9 +1,8 @@
 {
-  "name": "parlour-fullstack",
+  "name": "server",
   "version": "1.0.0",
   "main": "server.js",
  "scripts": {
-  "build": "cd client && npm install && npm run build",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +16,5 @@
     "express": "^5.2.1",
     "mongoose": "^9.1.0",
     "multer": "^2.0.2"
-  },
-   "engines": {
-    "node": "18.x"
   }
 }
