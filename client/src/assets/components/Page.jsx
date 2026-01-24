@@ -32,6 +32,7 @@ import ProductDetails from "../images/product-details.png";
 import Home from "../images/home.png";
 import Splash from "../images/splash.png";
 
+
 function Page() {
   const [showButton, setShowButton] = React.useState(false);
 
