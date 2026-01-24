@@ -7,12 +7,12 @@ import multer from "multer";
 import Category from "./model/Category.js";
 import Customer from "./model/customer.js";
 import Post  from "./model/post.js";
-dotenv = require("dotenv");config();
-  
+import dotenv from "dotenv";
+dotenv.config();  
 // Load environment variables from .env file
 // dotenv.config();
 // const PORT = process.env.PORT || 5000;
-const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
+// const dbURI = process.env.MONGO_URI || "mongodb://localhost:27017/my_database";
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -24,7 +24,7 @@ app.use(express.json());
 
 // 1. Connect to Local MongoDB
 mongoose
-  .connect(dbURI)
+  .connect(process.env.MONGO_URI , { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
