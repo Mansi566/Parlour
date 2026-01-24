@@ -7,7 +7,7 @@ import Home from "./assets/components/Admin/Home";
 import Customers from "./assets/components/Admin/Customers";
 import Orders from "./assets/components/Admin/Orders";
 import About from "./assets/components/Admin/About";
-import ContactInfo from "./assets/components/Admin/Contactinfo";
+import ContactInfo from "./assets/components/Admin/ContactInfo";
 import Category from "./assets/components/Admin/Category";
 import Post from "./assets/components/Admin/Post";
 function App() {
