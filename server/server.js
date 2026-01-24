@@ -193,10 +193,8 @@ app.use(express.static(path.join(__dirname, "client/dist")));
 
 
 // ⚠️ ALWAYS LAST (SPA fallback)
-app.get("*", (req, res) => {
-  return res.sendFile(
-    path.join(__dirname, "client/dist/index.html")
-  );
+app.get('/*', (req, res) => {
+  res.sendFile(join(__dirname, '../client/build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 10000;
