@@ -2,8 +2,6 @@
   "name": "parlour-fullstack",
   "private": true,
   "scripts": {
-    "install-client": "cd client && npm install",
-    "install-server": "cd server && npm install",
     "build": "cd client && npm install && npm run build",
     "start": "node server/server.js"
   },
