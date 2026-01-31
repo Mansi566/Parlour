@@ -201,8 +201,8 @@ app.get("/api/hello", (req, res) => {
 
 
 // Catch-all route for React
-app.get('/*', (req, res) => {
-  res.sendFile(join(__dirname, '../client/build', 'index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(join(__dirname, '../client/dist', 'index.html'));
 });
 
 const PORT = process.env.PORT || 10000;
