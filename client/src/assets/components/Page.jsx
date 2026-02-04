@@ -156,7 +156,7 @@ function Page() {
         <div className="w-full">
           <img
             className="position-relative w-full h-full"
-            src="/public/hero-section.png"
+            src="/dist/hero-section.png"
             alt="Hero Section"
             style={{
               objectFit: "cover",
