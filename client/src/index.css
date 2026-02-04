@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* If you have custom base styles, put them inside this block */
+@layer base {
+  body {
+    /* v4 doesn't need @tailwind base anymore; @import handles it */
+    margin: 0;
+    padding: 0;
+  }
+}
