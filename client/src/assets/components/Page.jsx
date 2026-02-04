@@ -55,7 +55,7 @@ function Page() {
   {
     /* <slide image> */
   }
-  const images = ["/profile.png", "/message.png", "/product-details.png", "/home.png", "/splash.png"];
+  const images = ["/profile.png", "/message-chat-view.png", "/product-details.png", "/home.png", "/splash.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -66,7 +66,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images1 = ["/message.png", "/product-details.png", "/home.png", "/splash.png", "/profile.png"];
+  const images1 = ["/message-chat-view.png", "/product-details.png", "/home.png", "/splash.png", "/profile.png"];
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images2 = ["/product-details.png", "/home.png", "/splash.png", "/profile.png", "/message.png"];
+  const images2 = ["/product-details.png", "/home.png", "/splash.png", "/profile.png", "/message-chat-view.png"];
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   useEffect(() => {
@@ -86,7 +86,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images3 = ["/home.png", "/splash.png", "/profile.png", "/message.png", "/product-details.png"];
+  const images3 = ["/home.png", "/splash.png", "/profile.png", "/message-chat-view.png", "/product-details.png"];
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
   useEffect(() => {
@@ -96,7 +96,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images4 = ["/splash.png", "/profile.png", "/message.png", "/product-details.png", "/home.png"];
+  const images4 = ["/splash.png", "/profile.png", "/message-chat-view.png", "/product-details.png", "/home.png"];
   const [currentIndex4, setCurrentIndex4] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
