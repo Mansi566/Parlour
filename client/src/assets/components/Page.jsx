@@ -442,7 +442,7 @@ function Page() {
                 width={230}
                 height={250}
                 src={`/images/${images3[currentIndex3]}`}
-                alt="slideshow"
+                alt="slideshow-3"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
               />
@@ -450,7 +450,7 @@ function Page() {
                 width={230}
                 height={250}
                 src={`/images/${images4[currentIndex4]}`}
-                alt="slideshow"
+                alt="slideshow-4"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
               />
@@ -476,7 +476,7 @@ function Page() {
                 width={230}
                 height={250}
                 src={`/images/${images2[currentIndex2]}`}
-                alt="slideshow"
+                alt="slideshow-2"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
               />
