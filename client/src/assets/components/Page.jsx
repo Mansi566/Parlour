@@ -441,7 +441,7 @@ function Page() {
               <img
                 width={230}
                 height={250}
-                src={images3[currentIndex3]}
+                src={`/images/${images3[currentIndex3]}`}
                 alt="slideshow"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
@@ -449,7 +449,7 @@ function Page() {
               <img
                 width={230}
                 height={250}
-                src={images4[currentIndex4]}
+                src={`/images/${images4[currentIndex4]}`}
                 alt="slideshow"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
@@ -459,14 +459,14 @@ function Page() {
               <img
                 width={230}
                 height={250}
-                src={images[currentIndex]}
+                src={`/images/${images[currentIndex]}`}
                 alt="slideshow"
                 className="object-cover rounded-md"
               />
               <img
                 width={230}
                 height={250}
-                src={images1[currentIndex1]}
+                src={`/images/${images1[currentIndex1]}`}
                 alt="slideshow"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
@@ -475,7 +475,7 @@ function Page() {
               <img
                 width={230}
                 height={250}
-                src={images2[currentIndex2]}
+                src={`/images/${images2[currentIndex2]}`}
                 alt="slideshow"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
