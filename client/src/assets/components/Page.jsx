@@ -467,7 +467,7 @@ function Page() {
                 width={230}
                 height={250}
                 src={`/images/${images1[currentIndex1]}`}
-                alt="slideshow"
+                alt="slideshow-1"
                 className="object-cover rounded-md"
                 style={{ filter: "blur(1px) brightness(1.1)" }}
               />
