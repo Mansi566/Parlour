@@ -558,8 +558,8 @@ function Page() {
             <div className="flex items-center">
               <div className="w-10 h-10 bg-[#a94ef0] rounded-full flex items-center justify-center text-white text-lg mr-3">
                 <img
-                  src="/images/phone.png"
-                  alt="Phone"
+                  src="/images/mail.png"
+                  alt="mail"
                   loading="lazy"
                   decoding="async"
                   className="w-5 h-5"
