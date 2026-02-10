@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import logo from '../assets/logo.png';
+
 
 function Page() {
   const [showButton, setShowButton] = React.useState(false);
@@ -55,7 +55,7 @@ function Page() {
   {
     /* <slide image> */
   }
-  const images = ["/profile.png", "/message-chat-view.png", "/product-details.png", "/home.png", "/splash.png"];
+  const images = ["/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png", "/images/home.png", "/images/splash.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -66,7 +66,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images1 = ["/message-chat-view.png", "/product-details.png", "/home.png", "/splash.png", "/profile.png"];
+  const images1 = ["/images/message-chat-view.png", "/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png"];
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images2 = ["/product-details.png", "/home.png", "/splash.png", "/profile.png", "/message-chat-view.png"];
+  const images2 = ["/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat-view.png"];
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   useEffect(() => {
@@ -86,7 +86,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images3 = ["/home.png", "/splash.png", "/profile.png", "/message-chat-view.png", "/product-details.png"];
+  const images3 = ["/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png"];
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
   useEffect(() => {
@@ -96,7 +96,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images4 = ["/splash.png", "/profile.png", "/message-chat-view.png", "/product-details.png", "/home.png"];
+  const images4 = ["/images/splash.png", "/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png", "/images/home.png"];
   const [currentIndex4, setCurrentIndex4] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -110,7 +110,7 @@ function Page() {
       {/* <navbar> */}
       <nav className="flex justify-between items-center p-4 ">
         <div>
-          <img src={logo} alt="logo" className="w-70 px-10"  />
+          <img src="/images/logo.png" alt="logo" className="w-70 px-10"  />
         </div>
         <div className="flex items-center mr-15">
           <ul className="flex space-x-7 mr-3 my-3 font-semibold">
@@ -156,7 +156,7 @@ function Page() {
         <div className="w-full">
           <img
             className="position-relative w-full h-full"
-            src="/hero-section.png"
+            src="/images/hero-section.png"
             alt="Hero Section"
             style={{
               objectFit: "cover",
@@ -170,7 +170,7 @@ function Page() {
          flex flex-col items-center"
         >
           <img
-            src="/logo-copy.png"
+            src="/images/logo-copy.png"
             alt="Logo Copy"
             className="w-50 h-50 justify-center mt-11"
             style={{ objectFit: "fill" }}
@@ -219,7 +219,7 @@ function Page() {
           <div>
             <Link to="/shoes">
               <img
-                src="/group-2085662932.png"
+                src="/images/group-2085662932.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -231,7 +231,7 @@ function Page() {
           <div>
             <Link to="/gown">
               <img
-                src="/group-2085662933.png"
+                src="/images/group-2085662933.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -243,7 +243,7 @@ function Page() {
           <div>
             <Link to="/tshirt">
               <img
-                src="/group-2085662934.png"
+                src="/images/group-2085662934.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -255,7 +255,7 @@ function Page() {
           <div>
             <Link to="/watches">
               <img
-                src="/group-2085662935.png"
+                src="/images/group-2085662935.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -267,7 +267,7 @@ function Page() {
           <div>
             <Link to="/earrings">
               <img
-                src="/group-2085662936.png"
+                src="/images/group-2085662936.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -279,7 +279,7 @@ function Page() {
           <div>
             <Link to="/kurti">
               <img
-                src="/group-2085662942.png"
+                src="/images/group-2085662942.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -291,7 +291,7 @@ function Page() {
           <div>
             <Link to="/jewellery">
               <img
-                src="/group-2085662947.png"
+                src="/images/group-2085662947.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -303,7 +303,7 @@ function Page() {
           <div>
             <Link to="/nailpaint">
               <img
-                src="/group-2085662937.png"
+                src="/images/group-2085662937.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -315,7 +315,7 @@ function Page() {
           <div>
             <Link to="/chniyacholi">
               <img
-                src="/group-2085662938.png"
+                src="/images/group-2085662938.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -327,7 +327,7 @@ function Page() {
           <div>
             <Link to="/saree">
               <img
-                src="/group-2085662939.png"
+                src="/images/group-2085662939.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -339,7 +339,7 @@ function Page() {
           <div>
             <Link to="/purse">
               <img
-                src="/group-2085662940.png"
+                src="/images/group-2085662940.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -351,7 +351,7 @@ function Page() {
           <div>
             <Link to="/mehndi">
               <img
-                src="/group-2085662941.png"
+                src="/images/group-2085662941.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -363,7 +363,7 @@ function Page() {
           <div>
             <Link to="/pants">
               <img
-                src="/group-2085662943.png"
+                src="/images/group-2085662943.png"
                 alt="missing"
                 width="100"
                 height="100"
@@ -381,7 +381,7 @@ function Page() {
           <div className="w-1/2 flex justify-center items-center">
             <img
               className="w-4/5 h-1/2 ml-15"
-              src="/about.png"
+              src="/images/about.png"
               alt="missing"
               style={{ borderRadius: "15px" }}
             />
@@ -488,7 +488,7 @@ function Page() {
               decoding="async"
               width={255}
               height={250}
-              src="/new-mobile.png"
+              src="/images/new-mobile.png"
               alt=""
               className="justify-self-center-safe position-relative"
             />
@@ -518,8 +518,8 @@ function Page() {
           Get the Parlour on the
         </h3>
         <div className="flex justify-center items-center space-x-2 mt-3">
-          <img src="/group.png" alt="missing" className="w-60 h-45" />
-          <img src="/ios.png" alt="missing" className="w-60 h-45" />
+          <img src="/images/group.png" alt="missing" className="w-60 h-45" />
+          <img src="/images/ios.png" alt="missing" className="w-60 h-45" />
         </div>
       </div>
       {/* <Part-4> */}
@@ -542,7 +542,7 @@ function Page() {
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-[#a94ef0] rounded-full flex items-center justify-center text-white text-lg mr-3">
                 <img
-                  src="/mail.png"
+                  src="/images/mail.png"
                   alt="Email"
                   loading="lazy"
                   decoding="async"
@@ -558,7 +558,7 @@ function Page() {
             <div className="flex items-center">
               <div className="w-10 h-10 bg-[#a94ef0] rounded-full flex items-center justify-center text-white text-lg mr-3">
                 <img
-                  src="/phone.png"
+                  src="/images/phone.png"
                   alt="Phone"
                   loading="lazy"
                   decoding="async"
@@ -626,7 +626,7 @@ function Page() {
             <div className="w-1/2 flex justify-start items-center">
               <div>
                 <img
-                  src="/logo.png"
+                  src="/images/logo.png"
                   alt="The Parlour Logo"
                   className="w-92 h-23"
                 />
