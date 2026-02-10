@@ -504,7 +504,7 @@ function Page() {
                 onChange={() => setCurrentIndex(index)}
                 className="w-3 h-3 color-[#59BF72] cursor-pointer"
               />
-            ))}
+            ))} 
           </div>
         </div>
       </div>
