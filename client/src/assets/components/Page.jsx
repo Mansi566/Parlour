@@ -55,7 +55,7 @@ function Page() {
   {
     /* <slide image> */
   }
-  const images = ["/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png", "/images/home.png", "/images/splash.png"];
+  const images = ["/images/profile.png", "/images/message-chat.png", "/images/product-details.png", "/images/home.png", "/images/splash.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -66,7 +66,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images1 = ["/images/message-chat-view.png", "/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png"];
+  const images1 = ["/images/message-chat.png", "/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png"];
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images2 = ["/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat-view.png"];
+  const images2 = ["/images/product-details.png", "/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat.png"];
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   useEffect(() => {
@@ -86,7 +86,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images3 = ["/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png"];
+  const images3 = ["/images/home.png", "/images/splash.png", "/images/profile.png", "/images/message-chat.png", "/images/product-details.png"];
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
   useEffect(() => {
@@ -96,7 +96,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images4 = ["/images/splash.png", "/images/profile.png", "/images/message-chat-view.png", "/images/product-details.png", "/images/home.png"];
+  const images4 = ["/images/splash.png", "/images/profile.png", "/images/message-chat.png", "/images/product-details.png", "/images/home.png"];
   const [currentIndex4, setCurrentIndex4] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
