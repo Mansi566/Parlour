@@ -460,7 +460,7 @@ function Page() {
                 width={230}
                 height={250}
                 src={`/images/${images[currentIndex]}`}
-                alt="slideshow"
+                alt="slideshow-main"
                 className="object-cover rounded-md"
               />
               <img
