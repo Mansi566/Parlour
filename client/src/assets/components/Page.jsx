@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-
+import logo from '../assets/logo.png';
 
 function Page() {
   const [showButton, setShowButton] = React.useState(false);
@@ -110,7 +110,7 @@ function Page() {
       {/* <navbar> */}
       <nav className="flex justify-between items-center p-4 ">
         <div>
-          <img src="/logo.png" alt="logo" className="w-70 px-10"  />
+          <img src={logo} alt="logo" className="w-70 px-10"  />
         </div>
         <div className="flex items-center mr-15">
           <ul className="flex space-x-7 mr-3 my-3 font-semibold">
