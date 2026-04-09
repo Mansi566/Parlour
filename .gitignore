@@ -3,4 +3,5 @@
 *.jpg
 *.jpeg
 *.svg
+.env
  node_modules/*
