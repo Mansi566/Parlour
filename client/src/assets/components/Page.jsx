@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/logo.png";
-import heroImage from "../images/hero section.png";
-import logocopy from "../images/logo copy.png";
+import heroImage from "../images/hero-section.png";
+import logocopy from "../images/logo-copy.png";
 import hairstyle from "../images/Group 2085662945.png";
 import shoes from "../images/Group 2085662932.png";
 import gown from "../images/Group 2085662933.png";
@@ -26,11 +26,11 @@ import appstore from "../images/ios.png";
 import mail from "../images/mail.png";
 import parlourlogo from "../images/theparlour.png";
 import newmobile from "../images/new-mobile.png";
-import Profile from "../images/Profile.png";
-import Message from "../images/Message (Chat View).png";
-import ProductDetails from "../images/Product Details.png";
-import Home from "../images/Home.png";
-import Splash from "../images/Splash.png";
+import profile from "../images/profile.png";
+import message from "../images/message-chat-views.png";
+import productdetails from "../images/product-details.png";
+import home from "../images/home.png";
+import splash from "../images/splash.png";
 
 function Page() {
   const [showButton, setShowButton] = React.useState(false);
@@ -82,7 +82,7 @@ function Page() {
   {
     /* <slide image> */
   }
-  const images = [Profile, Message, ProductDetails, Home, Splash];
+  const images = [profile, message, productdetails, home, splash];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -93,7 +93,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images1 = [Message, ProductDetails, Home, Splash, Profile];
+  const images1 = [message, productdetails, home, splash, profile];
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
   useEffect(() => {
@@ -103,7 +103,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images2 = [ProductDetails, Home, Splash, Profile, Message];
+  const images2 = [productdetails, home, splash, profile, message];
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   useEffect(() => {
@@ -113,7 +113,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images3 = [Home, Splash, Profile, Message, ProductDetails];
+  const images3 = [home, splash, profile, message, productdetails];
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
   useEffect(() => {
@@ -123,7 +123,7 @@ function Page() {
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
-  const images4 = [Splash, Profile, Message, ProductDetails, Home];
+  const images4 = [splash, profile, message, productdetails, home];
   const [currentIndex4, setCurrentIndex4] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
