@@ -27,7 +27,7 @@ import mail from "../images/mail.png";
 import parlourlogo from "../images/theparlour.png";
 import newmobile from "../images/new-mobile.png";
 import profile from "../images/profile.png";
-import message from "../images/message-chat-views.png";
+import message from "../images/message-chat-view.png";
 import productdetails from "../images/product-details.png";
 import home from "../images/home.png";
 import splash from "../images/splash.png";
