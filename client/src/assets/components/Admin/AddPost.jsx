@@ -107,7 +107,7 @@ function AddPost() {
     try {
       // 2. Send to Database/API
       // Replace '/api/posts' with your actual endpoint
-      const response = await fetch("http://localhost:5000/api/posts", {
+      const response = await fetch("https://parlour-backend-svez.onrender.com/api/posts", {
         method: "POST",
         body: formData,
       });

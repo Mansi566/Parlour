@@ -5,7 +5,7 @@ function PostList({ refreshTrigger }) {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/posts");
+      const response = await fetch("https://parlour-backend-svez.onrender.com/api/posts");
       if (!response.ok) throw new Error("Network response was not ok");
       const data = await response.json();
       setPosts(data);

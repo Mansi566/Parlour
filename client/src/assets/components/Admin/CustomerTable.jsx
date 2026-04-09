@@ -183,7 +183,7 @@ function CustomerTable() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/customers")
+      .get("https://parlour-backend-svez.onrender.com/api/customers")
       .then((response) => {
         setCustomers(response.data);
         setLoading(false);

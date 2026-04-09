@@ -26,7 +26,7 @@ function AddCategory({ onCategoryAdded }) {
     formData.append("image", selectedFile);
 
     try {
-      const response = await fetch("http://localhost:5000/api/category", {
+      const response = await fetch("https://parlour-backend-svez.onrender.com/api/category", {
         method: "POST",
         // Do NOT set headers here, FormData does it for you
         body: formData,

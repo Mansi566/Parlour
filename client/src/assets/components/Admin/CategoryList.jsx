@@ -200,7 +200,7 @@ function CategoryList({ refreshTrigger }) {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/category");
+      const response = await fetch("https://parlour-backend-svez.onrender.com/api/category");
       const data = await response.json();
       setCategories(data);
     } catch (err) {
@@ -233,7 +233,7 @@ function CategoryList({ refreshTrigger }) {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/category/${editId}`, {
+      const response = await fetch(`https://parlour-backend-svez.onrender.com/api/category/${editId}`, {
         method: "PUT",
         body: formData,
       });
@@ -254,7 +254,7 @@ function CategoryList({ refreshTrigger }) {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this category?")) {
       try {
-        const response = await fetch(`http://localhost:5000/api/category/${id}`, {
+        const response = await fetch(`https://parlour-backend-svez.onrender.com/api/category/${id}`, {
           method: "DELETE",
         });
         if (response.ok) {
